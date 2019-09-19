@@ -107,18 +107,18 @@ function draw() {
   // Move the rectangles from center left to right
 x = x+1;
 // Colour
-fill(0);
+fill(255);
 // Draw the rectangles
 rect (x,y,1,1);
-fill(0);
+fill(255);
 rect (x,y-2,1,1);
-fill(0);
+fill(255);
 rect (x,y-4,1,1);
-fill(0);
+fill(255);
 rect (x,y-6,1,1);
-fill(0);
+fill(255);
 rect (x,y-8,1,1);
-fill(0);
+fill(255);
 
 // Move the text according to mouse
 textX = mouseX;
@@ -127,8 +127,8 @@ textY = mouseY;
 textSize = 30;
 //Display the text
 text('Chronicles',textX, textY);
-// Colour
-fill(126);
+
+
 
 // Move New circle from bottom to top
 circY -=1
