@@ -20,6 +20,12 @@ let squareSize = 100;
 let x = 0;
 let y = 320;
 
+// The current position of text
+let textX;
+let textY;
+let textSize = 30;
+
+
 // preload()
 //
 // Nothing here
@@ -46,6 +52,8 @@ function setup() {
   // We divide the size by two because we're drawing from the center
   squareX = width + squareSize/2;
   squareY = height + squareSize/2;
+
+
 
   // We'll draw rectangles from the center
   rectMode(CENTER);
@@ -94,4 +102,14 @@ rect (x,y-6,1,1);
 fill(0);
 rect (x,y-8,1,1);
 fill(0);
+
+// Move the text according to mouse
+textX = mouseX;
+textY = mouseY;
+// Select size for the text
+textSize = 30;
+//Display the text
+text('Chronicles',textX, textY);
+// Colour
+fill(126);
 }
