@@ -18,12 +18,17 @@ let squareSize = 100;
 //The current positions of my rectangles
 
 let x = 0;
-let y = 320;
+let y = 324;
 
-// The current position of text
+// The current position of text following the mouse
 let textX;
 let textY;
 let textSize = 30;
+
+// The current position of the circle
+let circX;
+let circY;
+let circSize = 150;
 
 
 // preload()
@@ -53,7 +58,9 @@ function setup() {
   squareX = width + squareSize/2;
   squareY = height + squareSize/2;
 
-
+// Start the new circle from the bottom CENTER
+circX = 320;
+circY = 640;
 
   // We'll draw rectangles from the center
   rectMode(CENTER);
@@ -112,4 +119,12 @@ textSize = 30;
 text('Chronicles',textX, textY);
 // Colour
 fill(126);
+
+// Move New circle from bottom to top
+circY -=1
+//Colour
+fill (126,126,126);
+// Draw new circle
+ellipse(circX,circY,circleSize,circleSize);
+
 }
