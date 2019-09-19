@@ -15,6 +15,10 @@ let squareX;
 let squareY;
 let squareSize = 100;
 
+//The current positions of my rectangles
+
+let x = 0;
+let y = 320;
 
 // preload()
 //
@@ -73,4 +77,21 @@ function draw() {
   fill(0,0,255,10);
   // Display the square
   rect(squareX,squareY,squareSize,squareSize);
+
+
+  // Move the rectangles from center left to right
+x = x+1;
+// Colour
+fill(0);
+// Draw the rectangles
+rect (x,y,1,1);
+fill(0);
+rect (x,y-2,1,1);
+fill(0);
+rect (x,y-4,1,1);
+fill(0);
+rect (x,y-6,1,1);
+fill(0);
+rect (x,y-8,1,1);
+fill(0);
 }
