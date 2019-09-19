@@ -30,12 +30,19 @@ let circX;
 let circY;
 let circSize = 150;
 
+// Insertion of a moving image
+let imageX;
+let imageY;
+let imageNew;
+
 
 // preload()
 //
 // Nothing here
 
 function preload() {
+
+  img = loadImage ('assets/PSY.jpg');
 
 }
 
@@ -61,6 +68,9 @@ function setup() {
 // Start the new circle from the bottom CENTER
 circX = 320;
 circY = 640;
+
+image(img,1,1);
+
 
   // We'll draw rectangles from the center
   rectMode(CENTER);
